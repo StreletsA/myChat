@@ -11,7 +11,6 @@ export default function SendPanel()
     }
 
     let handleSubmit = (event) => {
-        alert('Отправленное сообщение: ' + value);
         event.preventDefault();
 
         const params = {
