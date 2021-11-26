@@ -2,6 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import Message from "./base/Message";
 import {useEffect, useState} from "react";
+import SendPanel from "./base/SendPanel";
 
 function App() {
 
@@ -16,7 +17,6 @@ function App() {
                 var ans = <Message sender={val.sender} content={val.content}/>;
                 return ans;
             }));
-
             setIsLoaded(true);
         }));
   }
@@ -31,9 +31,13 @@ function App() {
     return <p>Loading...</p>
   else
     return (
-      <table>
-        {items}
-      </table>
+        <div>
+            <table>
+                {items}
+            </table>
+            <SendPanel />
+        </div>
+
     );
 }
 

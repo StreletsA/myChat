@@ -28,4 +28,8 @@ public class MessageDAO {
         messages.add(new Message(sender, content));
     }
 
+    public void addMessage(Message message){
+        messages.add(message);
+    }
+
 }
