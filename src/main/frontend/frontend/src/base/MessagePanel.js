@@ -12,7 +12,7 @@ export default function MessagePanel() {
         fetch("http://localhost:80/api/messages/")
             .then(result => result.json().then( data => {
                 setItems(Object.values(data).map(function(val) {
-                    var ans = <Message sender={val.sender} content={val.content}/>;
+                    var ans = <Message date={val.date} sender={val.sender} content={val.content}/>;
                     return ans;
                 }));
                 setIsLoaded(true);
