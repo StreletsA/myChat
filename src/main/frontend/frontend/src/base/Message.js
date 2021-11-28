@@ -1,5 +1,3 @@
-import React, { useState, useEffect, Component } from 'react';
-
 export default function Message(props)
 {
 

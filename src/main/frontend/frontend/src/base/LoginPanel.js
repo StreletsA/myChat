@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from "react";
+import React, {useState} from "react";
 import Cookies from 'universal-cookie';
 
 export default function LoginPanel() {

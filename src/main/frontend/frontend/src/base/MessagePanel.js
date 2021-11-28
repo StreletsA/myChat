@@ -1,6 +1,5 @@
 import {useEffect, useState} from "react";
 import Message from "./Message";
-import SendPanel from "./SendPanel";
 
 export default function MessagePanel() {
 
