@@ -69,7 +69,7 @@ public class MessageDAO {
                     date,
                     sender,
                     content);
-            ResultSet resultSet = statement.executeQuery(sql);
+            statement.executeUpdate(sql);
         } catch (SQLException e) {
             e.printStackTrace();
         }
@@ -79,7 +79,7 @@ public class MessageDAO {
         String date = message.getDate();
         String sender = message.getSender();
         String content = message.getContent();
-        
+
         addMessage(date, sender, content);
     }
 
