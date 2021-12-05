@@ -18,6 +18,7 @@ public class MessageDAO {
     private static final String password = "12345678";;
     private static Connection connection;
 
+    //
     static {
         // We load driver to operating memory
         try {
