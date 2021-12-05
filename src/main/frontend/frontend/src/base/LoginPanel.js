@@ -1,5 +1,6 @@
 import React, {useState} from "react";
 import Cookies from 'universal-cookie';
+import {InputGroup, Button} from '../../node_modules/bootstrap/dist/css/bootstrap.min.css';
 
 export default function LoginPanel() {
 
@@ -20,6 +21,7 @@ export default function LoginPanel() {
     return (
         <div>
             <form onSubmit={handleSubmit}>
+
                 <label>
                     Ваше имя:
                     <input type="text" onChange={handleChange}/>

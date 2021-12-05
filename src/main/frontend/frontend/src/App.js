@@ -2,6 +2,7 @@ import SendPanel from "./base/SendPanel";
 import MessagePanel from "./base/MessagePanel";
 import Cookies from "universal-cookie";
 import LoginPanel from "./base/LoginPanel";
+import React from "react";
 
 function App() {
 
@@ -18,11 +19,13 @@ function App() {
         )
     else
         return (
+            <center>
             <div>
                 <MessagePanel/>
                 <SendPanel />
-                <button onClick={exit}>Выйти</button>
+                <button className="btn btn-danger" onClick={exit}>Выйти</button>
             </div>
+            </center>
         );
 }
 

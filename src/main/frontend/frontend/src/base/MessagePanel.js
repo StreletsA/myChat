@@ -31,8 +31,10 @@ export default function MessagePanel() {
     else
         return (
             <div>
-                <table>
-                    {items}
+                <table class="table table-striped">
+                    <tbody>
+                        {items}
+                    </tbody>
                 </table>
             </div>
         );

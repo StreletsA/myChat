@@ -1,5 +1,6 @@
 import React, { useState} from 'react';
 import Cookies from "universal-cookie";
+import {Button} from "bootstrap/dist/css/bootstrap.min.css";
 
 export default function SendPanel()
 {
@@ -46,11 +47,14 @@ export default function SendPanel()
     }
 
     return(
+        <div>
         <form onSubmit={handleSubmit}>
             <label>
-                <input type="text" value={value} onChange={handleChange} />
+                <input onChange={handleChange} type="text" className="form-control" placeholder="Введите сообщение"/>
             </label>
-            <input type="submit" value="Отправить" />
+            <button class="btn btn-primary" type="submit">Отправить</button>
         </form>
+
+        </div>
     )
 }
